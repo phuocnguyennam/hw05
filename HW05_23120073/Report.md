@@ -256,18 +256,3 @@ flowchart TD
 | **2. Cảnh báo giả do nhiễu môi trường ảo hóa (False Alarms / Flakiness)** | Các shared CI runner (như GitHub-hosted Ubuntu/Windows VM) có hiện tượng "noisy neighbor" (CPU steal, I/O spike bất chợt), dễ làm `p95` của một lần chạy vọt lên 25–30% dù code không hề chậm đi. | • **Bước Warm-up 15 giây** trước khi đo chính thức để V8 JIT biên dịch xong các hàm nóng và nạp cache SQLite.<br>• **Ngưỡng kép (Tương đối $+20\%$ VÀ Tuyệt đối $+25\text{ ms}$):** Tránh việc một API nhỏ tăng vài ms làm gãy build.<br>• **Cơ chế Retry xác nhận 1 lần (2-Stage Gate):** Chỉ khi **cả 2 lần chạy liên tiếp** cùng vượt ngưỡng `p95` thì mới chặn PR (`FAIL`), giúp giảm xác suất cảnh báo giả từ $p$ xuống $p^2$. |
 | **3. Trôi dữ liệu chuẩn (Baseline Drift)** | Như đã chứng minh ở Task 1 & Task 2, nếu để bài test import cộng dồn dữ liệu (từ 5 lên 17.725 sản phẩm) mà không cố định quy mô DB ban đầu, `p95` của `GET /api/products` sẽ tự tăng theo kích thước bảng. | Mỗi lần chạy CI đều khởi tạo file `database.sqlite` từ một snapshot cố định trước khi đo, đảm bảo mọi commit được so sánh trên **cùng một kích thước payload**. |
 
----
-
-## Phụ lục — Cấu trúc thư mục bài nộp
-
-```
-HW05_23120073/
-├── Report.md                  # Báo cáo chính (Task 1, Task 2, Task 3)
-├── test_design.md             # Tài liệu chi tiết thiết kế tham số kiểm thử
-├── task2_analysis.md          # Bản ghi chi tiết kết quả phân tích file .jtl
-├── test_plans/                # 3 file kịch bản JMeter (.jmx): Load, Stress, Spike (4 bước)
-├── data/                      # admin_credentials.csv, products_import.csv
-├── results/                   # 3 file log thô .jtl ngày 22/11/2026
-├── evidence/hardware/         # hardware_spec.md + ảnh chụp dxdiag và Task Manager
-└── tools/                     # build_plans.py, gen_data.py, run_scenario.ps1, analyze_jtl.py
-```

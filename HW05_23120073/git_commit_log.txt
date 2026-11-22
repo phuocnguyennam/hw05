@@ -1,11 +1,23 @@
-﻿commit f42ac99a36e40583dbf6b0dc2fc9b002789a9cf6
+﻿commit 58fbe6e7239bc3c11dfc5438788e9d29975c90d5
+Author: phuocnguyennam <phuocnguyennam2209@gmail.com>
+Date:   Mon Nov 23 00:17:02 2026 +0700
+
+    docs(hw05-report): remove directory structure appendix from Report.md and regenerate Report.pdf
+
+ HW05_23120073/AI Audit Report.pdf | Bin 218101 -> 218101 bytes
+ HW05_23120073/Report.md           |  15 ---------------
+ HW05_23120073/Report.pdf          | Bin 498739 -> 494916 bytes
+ HW05_23120073/git_commit_log.txt  |  17 ++++++++++++++---
+ 4 files changed, 14 insertions(+), 18 deletions(-)
+
+commit 2968de6cbfda60c150e006b25fcea745990fddf3
 Author: phuocnguyennam <phuocnguyennam2209@gmail.com>
 Date:   Mon Nov 23 00:15:38 2026 +0700
 
     chore(hw05-gitlog): finalize step-by-step Git commit log
 
- HW05_23120073/git_commit_log.txt | 17 ++++++++++++++---
- 1 file changed, 14 insertions(+), 3 deletions(-)
+ HW05_23120073/git_commit_log.txt | 26 +++++++++++++++++++++++---
+ 1 file changed, 23 insertions(+), 3 deletions(-)
 
 commit 1a436b98ae3b34d3f65310dbcca0b6509384f00c
 Author: phuocnguyennam <phuocnguyennam2209@gmail.com>
