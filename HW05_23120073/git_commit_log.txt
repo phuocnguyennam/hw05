@@ -1,11 +1,31 @@
-﻿commit 5482ebd53ba5d1f5601761dc003abdca37caa280
+﻿commit f42ac99a36e40583dbf6b0dc2fc9b002789a9cf6
+Author: phuocnguyennam <phuocnguyennam2209@gmail.com>
+Date:   Mon Nov 23 00:15:38 2026 +0700
+
+    chore(hw05-gitlog): finalize step-by-step Git commit log
+
+ HW05_23120073/git_commit_log.txt | 17 ++++++++++++++---
+ 1 file changed, 14 insertions(+), 3 deletions(-)
+
+commit 1a436b98ae3b34d3f65310dbcca0b6509384f00c
+Author: phuocnguyennam <phuocnguyennam2209@gmail.com>
+Date:   Mon Nov 23 00:15:38 2026 +0700
+
+    docs(hw05-pdf): export Report.pdf and AI Audit Report.pdf for final submission
+
+ HW05_23120073/AI Audit Report.pdf  | Bin 0 -> 218101 bytes
+ HW05_23120073/Report.pdf           | Bin 0 -> 498739 bytes
+ HW05_23120073/tools/export_pdfs.py |  70 +++++++++++++++++++++++++++++++++++++
+ 3 files changed, 70 insertions(+)
+
+commit 022669e33fe2ba5292594f03d714c0472dc9e426
 Author: phuocnguyennam <phuocnguyennam2209@gmail.com>
 Date:   Mon Nov 23 00:11:49 2026 +0700
 
     chore(hw05-gitlog): update Git commit log with README commit
 
- HW05_23120073/git_commit_log.txt | 15 ++++++++++++---
- 1 file changed, 12 insertions(+), 3 deletions(-)
+ HW05_23120073/git_commit_log.txt | 24 +++++++++++++++++++++---
+ 1 file changed, 21 insertions(+), 3 deletions(-)
 
 commit fde7b31e512b357af15a6c8e91da9914e6f1c195
 Author: phuocnguyennam <phuocnguyennam2209@gmail.com>
