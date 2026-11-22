@@ -1,11 +1,29 @@
-﻿commit dd31171623aa72adce42fad2b4e62002b61a623a
+﻿commit 5482ebd53ba5d1f5601761dc003abdca37caa280
+Author: phuocnguyennam <phuocnguyennam2209@gmail.com>
+Date:   Mon Nov 23 00:11:49 2026 +0700
+
+    chore(hw05-gitlog): update Git commit log with README commit
+
+ HW05_23120073/git_commit_log.txt | 15 ++++++++++++---
+ 1 file changed, 12 insertions(+), 3 deletions(-)
+
+commit fde7b31e512b357af15a6c8e91da9914e6f1c195
+Author: phuocnguyennam <phuocnguyennam2209@gmail.com>
+Date:   Mon Nov 23 00:11:48 2026 +0700
+
+    docs(hw05-readme): add README.md with self-assessment table (90/100) and test summary report
+
+ HW05_23120073/README.md | 62 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 62 insertions(+)
+
+commit 94f7b10b13159a2181c989de09b3e3fa4e487fb8
 Author: phuocnguyennam <phuocnguyennam2209@gmail.com>
 Date:   Mon Nov 23 00:08:49 2026 +0700
 
     chore(hw05-gitlog): export step-by-step Git commit log for HW05 submission
 
- HW05_23120073/git_commit_log.txt | 539 +++++++++++++++++++++++++++++++++++++++
- 1 file changed, 539 insertions(+)
+ HW05_23120073/git_commit_log.txt | 548 +++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 548 insertions(+)
 
 commit dd9aa75256140fdfacc7822361e86f45a2b32ae5
 Author: phuocnguyennam <phuocnguyennam2209@gmail.com>
